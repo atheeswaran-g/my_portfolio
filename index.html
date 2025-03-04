@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atheeswaran g | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Welcome !</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi,</h3>
+            <h1>I'm <span class="name"></span></h1>
+            <h3>Cloud Engineer</h3>
+            <p>I am a dedicated software developer with expertise in web development and cloud technologies, committed to building scalable and efficient solutions.</p>
+            <a href="images/athees_cv.pdf" class="btn">Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="images/athees.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a detail-oriented Software developer skilled in building scalable applications. My expertise includes Java, Spring Boot,and cloud technologies. I am dedicated to solving complex problems and delivering high-quality solutions, leveraging the latest tools and frameworks.</p>
+        <h3>Education</h3>
+        <div class="education">
+            <div class="edu-item">
+                <strong>B.Tech - Information Technology<br>Karpagam Institute of Technology</strong>
+                <span>CGPA : 7.4%</span>
+            </div>
+            <div class="edu-item">
+                <strong>HSC<br>Ideal Matric Higher Secondary School</strong>
+                <span>Percentage : 71.5%</span>
+            </div>
+            <div class="edu-item">
+                <strong>SSLC<br>Ideal Matric Higher Secondary School</strong>
+                <span>Percentage : 85%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Technical Languages</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h2>Frent end</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-css3"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-figma"></i>
+                        <h3>Figma</h3>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h2>Back end</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h3>Express</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h2>DB Servers</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>MongoDB</h3>
+                    </div>
+           
+                </div>
+            </div>
+        </div>
+</section>
+
+    <section id="project">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="project-item">
+                <h2>Personal Portfolio</h2>
+                <p>Developed a personal portfolio using HTML and CSS with a responsive framework for seamless adaptability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h1>Certifications</h1>
+        <div class="certifications-container">
+            <div class="certificate-item" onclick="showImage('images/a2.jpg')">
+                <img src="images/a2.jpg" alt="Certification 1">
+                <h3>AWS-Foundations</h3>
+            </div>
+            <div class="certificate-item" onclick="showImage('images/a3.jpg')">
+                <img src="images/a3.jpg" alt="Certification 2">
+                <h3>NPTEL - Java</h3>
+            </div>
+            <div class="certificate-item" onclick="showImage('images/a1.jpg')">
+                <img src="images/a1.jpg" alt="Certification 3">
+                <h3>UI&UX</h3>
+            </div>
+            <div class="certificate-item" onclick="showImage('images/a4.jpg')">
+                <img src="images/a4.jpg" alt="Certification 4">
+                <h3>AWS-Observability></h3>
+            </div>
+            <div class="certificate-item" onclick="showImage('images/a5.jpg')">
+                <img src="images/a5.jpg" alt="Certification 5">
+                <h3>Amazon CloudWatch-Troubleshooting</h3>
+            </div>
+        </div>
+    </section>
+    
+    <div id="imageModal" class="modal" onclick="hideImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <ul class="contact-details">
+            <li><i class="fas fa-envelope"></i> aatheeswarangovindraj@gmail.com</li>
+            <li><i class="fas fa-phone"></i> 9629894299</li>
+            <li><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</li>
+        </ul>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/aatheeswaran-govindraj-017636269/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/atheeswaran-g" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- Gmail: Pre-filled subject and body -->
+            <a href="mailto:aatheeswarangovindraj@gmail.com?subject=Hello%20Aatheeswaran&body=I%20would%20like%20to%20connect%20with%20you." target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
+            
+            <!-- WhatsApp Link for Mobile & Desktop -->
+            <a href="https://wa.me/9629894299?text=Hello%20Aatheeswaran,%20I%20would%20like%20to%20connect%20with%20you." target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
